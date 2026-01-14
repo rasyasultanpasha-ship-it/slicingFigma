@@ -3,9 +3,19 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ApprovalController;
+use App\Http\Controllers\LanjutanController;
+Route::get('/dashboard', function () {
+    return view('eDocument.dashboard');
+})->name('dashboard');
 
-Route::get('/', [DashboardController::class, 'index']);
-Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/approval', function () {
+    return view('eDocument.approvalpage');
+})->name('approval');
 
-Route::get('/approved-detail', [ApprovalController::class, 'approved']);
-Route::get('/approve/{id}', [ApprovalController::class, 'approve']);
+Route::get('/approved', function () {
+    return view('eDocument.approvedDocumentView');
+})->name('approved');
+
+Route::get('/lanjutan', function () {
+    return view('eDocument.lanjutan');
+})->name('lanjutan');

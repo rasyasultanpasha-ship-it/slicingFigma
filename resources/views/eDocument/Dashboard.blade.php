@@ -185,10 +185,16 @@
 
         <div class="menu">
             <h8> <a href="#">📁 FOLDERS</a></h8><br>
-            <h4> <a href="#">✏️ Create Document</a> </h4>
-            <h4> <a href="#">✔️ Approval</a> </h4>
-            <h4> <a href="#">✉️ Inbox</a> </h4>
-            <h4> <a href="#">❓ Help</a> </h4>
+
+<h4> <a href="#">✏️ Create Document</a> </h4>
+<h4><a href="{{ route('dashboard') }}">🏠 Dashboard</a></h4>
+<h4><a href="{{ route('approval') }}">✔️ Approval</a></h4>
+<h4><a href="{{ route('approved') }}">📄 Approved</a></h4>
+<h4><a href="{{ route('lanjutan') }}">➡️ Lanjutan</a></h4>
+
+<h4> <a href="#">✉️ Inbox</a> </h4>
+<h4> <a href="#">❓ Help</a> </h4>
+
         </div>
     </div>
 
